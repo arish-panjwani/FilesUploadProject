@@ -1,4 +1,4 @@
-This is a simple Login and Files(Images and Pdf) upload and view implementation using Async Storage
+This is a simple React - Native Login and Files(Images and Pdf) upload and view implementation using Async Storage
 
 Please run the following in project's terminal after downloading the project
 
