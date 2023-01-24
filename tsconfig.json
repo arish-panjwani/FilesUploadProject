@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    /* Basic Options */
+    "target": "ES5",
+    "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    // "lib": ["es2017"],                     /* Specify library files to be included in the compilation. */
+    "allowJs": true /* Allow javascript files to be compiled. */,
+    "jsx": "react-native" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
+    "declaration": true /* Generates corresponding '.d.ts' file. */,
+    "noEmit": true,
+    "isolatedModules": false /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */,
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */,
+    "paths": {
+      /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+      "@components/*": ["./components/*"],
+      "@assets/*": ["./assets/*"],
+      "@utils/*": ["./utils/*"],
+      "@screens/*": ["./screens/*"],
+      "@resources/*": ["./res/*"],
+      "@navigation/*": ["./navigation/*"],
+      "*": ["*", "*.ios", "*.android"]
+    },
+    "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "skipLibCheck": true,
+    "resolveJsonModule": true /* Allows importing modules with a ‘.json’ extension, which is a common practice in node projects. */
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
